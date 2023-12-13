@@ -591,6 +591,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -605,6 +609,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .items-center {
@@ -803,5 +811,9 @@ nav::-webkit-scrollbar {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }

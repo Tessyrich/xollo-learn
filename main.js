@@ -1,9 +1,8 @@
+let scrollContainer = document.querySelector(".nav-cont");
+const scrollContent = document.querySelector(".scroll-bar");
+const leftScroll = document.querySelector(".left-scroll");
+const rightScroll = document.querySelector(".right-scroll");
 document.addEventListener("DOMContentLoaded", function () {
-  const scrollContainer = document.querySelector("nav");
-  const scrollContent = document.querySelector(".scroll-bar");
-  const leftScroll = document.querySelector(".left-scroll");
-  const rightScroll = document.querySelector(".right-scroll");
-
   // Scroll to the left
   leftScroll.addEventListener("click", function () {
     scrollContainer.scrollBy({
@@ -19,4 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   });
+});
+
+// Toggle arrow visibility based on scroll position
+scrollContainer.addEventListener("scroll", function () {
+  leftScroll.style.display = scrollContainer.scrollLeft > 0 ? "block" : "none";
+  rightScroll.style.display =
+    scrollContainer.scrollLeft <
+    scrollContent.scrollWidth - scrollContainer.clientWidth
+      ? "block"
+      : "none";
 });
