@@ -7,175 +7,213 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
     <link href="./dist/output.css" rel="stylesheet" />
     <title>Xollo learn</title>
   </head>
   <body>
     <!-- NAVBAR -->
+    <!-- FIRST NAV -->
     <div
-      class="left-scroll absolute w-20 py-4 px-10 bg-gradient-to-r to-white from-slate-300"
+      class="w-full flex md:mx-auto text-white items-center justify-between text-sm py-1 px-8"
     >
-      <i class="fa-solid fa-angle-left"></i>
-    </div>
-    <div
-      class="right-scroll absolute right-0 justify-end w-20 py-4 px-10 bg-gradient-to-r from-white to-slate-300"
-    >
-      <i class="fa-solid fa-angle-right"></i>
-    </div>
-    <nav
-      class="container nav-cont md:mx-auto bg-transparent text-black lg:flex items-center text-sm py-4 overflow-x-scroll whitespace-nowrap select-none"
-    >
-      <div class="scroll-bar flex">
+      <div>
+        <a href="#" class="w-20 text-black font-bold text-lg flex"
+          ><img src="./images/Frame 26.png" /> <p>Xollolearn</p>
+        </a>
+      </div>
+
+      <div class="lg:flex items-center w-2/4 border rounded-md border-black pr-2 hidden">
+        <input
+          type="text"
+          class="border-none px-2 py-3 w-full bg-transparent text-black"
+          placeholder="Which digital are you looking to aquire?"
+        />
+        <button type="submit" class="bg-black text-white rounded-md py-2 px-3">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="flex gap-6">
         <a
           href="#"
-          class="tabs hover:text-gray-900 hover:border-2 border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
+          class="rounded-lg px-4 py-2 text-white bg-black text-center md:block"
+          >Join for free</a
+        >
+        <a href="#" class="border py-2 px-4 rounded-md border-black">
+          <i class="fa-solid fa-ellipsis text-black"></i>
+        </a>
+        <a href="#" class="border py-2 px-4 rounded-md border-black">
+          <i class="fa-solid fa-globe text-black"></i>
+        </a>
+      </div>
+    </div>
+    <div class="py-10 px-5 flex flex-col items-center">
+      <h1
+        class="text-center text-6xl font-bold text pb-5 font-serif leading-relaxed"
+      >
+        Hone your <span class="text-blue-600">digital skills</span> here at
+        Xollolearn
+      </h1>
+      <a
+        href="#"
+        class="rounded-lg px-4 py-2 w-40 text-white bg-black text-center md:block"
+        >Explore courses</a
+      >
+    </div>
+
+    </div>
+    <!-- SECOND NAV -->
+    <nav
+      class="container md:mx-auto bg-transparent text-black lg:flex items-center text-base py-4 overflow-x-scroll whitespace-nowrap select-none"
+    >
+      <div class="scroll-bar flex w-full justify-center">
+        <a
+          href="#"
+          class="tabs hover:text-gray-900 hover:border-2 border-gray-700 rounded-md border py-1 px-6 mx-3 active:bg-black active:text-white"
           >All</a
         >
         <a
           href="#"
-          class="tabs hover:text-gray-900 hover:border-2 border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
+          class="tabs hover:text-gray-900 hover:border-2 border-gray-700 rounded-md border py-1 px-6 mx-3 active:bg-black active:text-white"
           >Programming</a
         >
         <a
           href="#"
-          class="tabs hover:text-gray-900 hover:border-2 border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
+          class="tabs hover:text-gray-900 hover:border-2 border-gray-700 rounded-md border py-1 px-6 mx-3 active:bg-black active:text-white"
           >ui/ux</a
         >
         <a
           href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
+          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-md border py-1 px-6 mx-3 active:bg-black active:text-white"
           >Marketing</a
         >
         <a
           href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
+          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-md border py-1 px-4 mx-3 active:bg-black active:text-white"
           >Videography</a
         >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Caligraphy</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 transition duration-100 border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >user testing</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 transition duration-100 border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Blender</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 transition duration-100 border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Photography</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Videography</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Autocad</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Figma</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Music</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Midjourney</a
-        >
-        <a
-          href="#"
-          class="tabs hover:text-gray-900 hover:border-2 hidden md:block border-gray-700 rounded-sm border py-1 px-4 mx-3 active:bg-black active:text-white"
-          >Adobe effect</a
-        >
+
       </div>
     </nav>
-    <!-- ILUSTRATION SECTION -->
+    <!-- COURSE SECTION -->
     <section
       class="justify-between items-center w-full py-5 px-8 gap-6 grid-cols-2 grid lg:grid-cols-5 lg:flex"
     >
-      <div class="w-42 lg:w-64">
-        <img
-          src=""
-          alt=""
-          class="w-full lg:w-full lg:h-60 rounded-lg h-44 bg-gray-400 border"
-        />
-        <div class="flex justify-between gap-8">
-          <p class="text-black font-bold text-md pt-1.5">
-            Learn illustration arts from the best teachers that teaches Adobe
-            ilustrator
-          </p>
-          <p class="text-black text-md pt-1.5 whitespace-nowrap">
-            <i class="fa-solid fa-star"> </i>4.5
-          </p>
-        </div>
-        <p class="text-sm">Allen Stewart</p>
+
+    <div class="relative w-42 lg:w-64 h-80 group">
+  <!-- Course Image -->
+  <img
+    src=""
+    alt=""
+    class="w-full lg:w-full lg:h-full rounded-lg h-44 bg-black border transition-transform transform-gpu group-hover:scale-105"
+  />
+
+  <!-- Text Overlay -->
+  <div class="absolute inset-0 flex flex-col justify-end p-4">
+    <div class="bg-transparent bg-opacity-50 rounded-lg">
+      <!-- Course Details -->
+      <div class="text-white">
+        <p class="text-2xl font-mono font-bold">
+          Learn adobe illustrator today
+        </p>
+
       </div>
-      <div class="w-42 lg:w-64">
-        <img
-          src=""
-          alt=""
-          class="w-full lg:w-full lg:h-60 rounded-lg h-44 bg-gray-400 border"
-        />
-        <div class="flex justify-between gap-8">
-          <p class="text-black font-bold text-md pt-1.5">
-            Learn illustration arts from the best teachers that teaches Adobe
-            ilustrator
-          </p>
-          <p class="text-black text-md pt-1.5 whitespace-nowrap">
-            <i class="fa-solid fa-star"> </i>4.5
-          </p>
-        </div>
-        <p class="text-sm">Allen Stewart</p>
+    </div>
+  </div>
+</div>
+
+    <div class="relative w-42 lg:w-64 h-80 group">
+  <!-- Course Image -->
+  <img
+    src=""
+    alt=""
+    class="w-full lg:w-full lg:h-full rounded-lg h-44 bg-black border transition-transform transform-gpu group-hover:scale-105"
+  />
+
+  <!-- Text Overlay -->
+  <div class="absolute inset-0 flex flex-col justify-end p-4">
+    <div class="bg-transparent bg-opacity-50 rounded-lg">
+      <!-- Course Details -->
+      <div class="text-white">
+        <p class="text-2xl font-mono font-bold">
+          Learn adobe illustrator today
+        </p>
+
       </div>
-      <div class="w-42 lg:w-64">
-        <img
-          src=""
-          alt=""
-          class="w-full lg:w-full lg:h-60 rounded-lg h-44 bg-gray-400 border"
-        />
-        <div class="flex justify-between gap-8">
-          <p class="text-black font-bold text-md pt-1.5">
-            Learn illustration arts from the best teachers that teaches Adobe
-            ilustrator
-          </p>
-          <p class="text-black text-md pt-1.5 whitespace-nowrap">
-            <i class="fa-solid fa-star"> </i>4.5
-          </p>
-        </div>
-        <p class="text-sm">Allen Stewart</p>
+    </div>
+  </div>
+</div>
+
+    <div class="relative w-42 lg:w-64 h-80 group">
+  <!-- Course Image -->
+  <img
+    src=""
+    alt=""
+    class="w-full lg:w-full lg:h-full rounded-lg h-44 bg-black border transition-transform transform-gpu group-hover:scale-105"
+  />
+
+  <!-- Text Overlay -->
+  <div class="absolute inset-0 flex flex-col justify-end p-4">
+    <div class="bg-transparent bg-opacity-50 rounded-lg">
+      <!-- Course Details -->
+      <div class="text-white">
+        <p class="text-2xl font-mono font-bold">
+          Learn adobe illustrator today
+        </p>
+
       </div>
-      <div class="w-42 lg:w-64">
-        <img
-          src=""
-          alt=""
-          class="w-full lg:w-full lg:h-60 rounded-lg h-44 bg-gray-400 border"
-        />
-        <div class="flex justify-between gap-8">
-          <p class="text-black font-bold text-md pt-1.5">
-            Learn illustration arts from the best teachers that teaches Adobe
-            ilustrator
-          </p>
-          <p class="text-black text-md pt-1.5 whitespace-nowrap">
-            <i class="fa-solid fa-star"> </i>4.5
-          </p>
-        </div>
-        <p class="text-sm">Allen Stewart</p>
+    </div>
+  </div>
+</div>
+
+    <div class="relative w-42 lg:w-64 h-80 group">
+  <!-- Course Image -->
+  <img
+    src=""
+    alt=""
+    class="w-full lg:w-full lg:h-full rounded-lg h-44 bg-black border transition-transform transform-gpu group-hover:scale-105"
+  />
+
+  <!-- Text Overlay -->
+  <div class="absolute inset-0 flex flex-col justify-end p-4">
+    <div class="bg-transparent bg-opacity-50 rounded-lg">
+      <!-- Course Details -->
+      <div class="text-white">
+        <p class="text-2xl font-mono font-bold">
+          Learn adobe illustrator today
+        </p>
+
       </div>
+    </div>
+  </div>
+</div>
+
+    
     </section>
+
+<div class="flex overflow-hidden  justify-center">
+  <div class="flex space-x-4 animate-marquee w-full gap-10">
+    <!-- Your list items go here -->
+<a href=""><img src="./images/behance-logo 1.png" alt=""></a>
+<a href=""><img src="./images/R.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac45_logo-box-upwork.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac40_logo-box-nyt.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac3f_logo-box-greenhouse.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac3e_logo-box-monday.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac3e_logo-box-monday.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac3c_logo-box-dropbox.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac3c_logo-box-dropbox.png" alt=""></a>
+<a href=""><img src="./images/R.png" alt=""></a>
+<a href=""><img src="./images/behance-logo 1.png" alt=""></a>
+<a href=""><img src="./images/6515a6d5f30daec433d0ac3a_logo-box-discord.png" alt=""></a>
+    <!-- Repeat as needed -->
+  </div>
+</div>
+
+
+
+
     <script
       src="https://kit.fontawesome.com/953df531f5.js"
       crossorigin="anonymous"
